@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
 *{
 	box-sizing: border-box;
 }
@@ -16,11 +18,11 @@ img{
 .images{
 	display: block;
 	padding: 5px;
-	margin: 10px;
-
 }
 
 .images cite {
+	font-family: 'Open-Sans', sans-serif;
+	font-weight: 300;
 	color: black;
 	background-color: white;
 }
@@ -30,6 +32,16 @@ div > div {
 	height: 200px;
 
 
+}
+
+.buttons button{
+font-family: 'Open-Sans', sans-serif;
+font-weight: 600;
+background-color: lightblue;
+color: green;
+font-size: 30px;
+padding: 10px;
+margin: 0 auto;
 }
 
 .active{
