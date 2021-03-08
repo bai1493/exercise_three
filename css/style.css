@@ -5,6 +5,7 @@
 html,body{
 	min-height: 100vh;
 	margin: 0;
+	max-width: 300px;
 }
 
 img{
@@ -12,14 +13,16 @@ img{
 }
 
 .images{
-	color: white;
+	color: black;
 	display: flex;
 }
+
 
 div > div {
 	width: 250px;
 	height: 250px;
 	padding: 20px;
+
 }
 
 .active{

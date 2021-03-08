@@ -1,13 +1,7 @@
-var img = document.createElement("img")
-var imgName = ["lake", "lake2", "lakecloseup", "lakelouise", "lakelouise2","morrainelake", "morrainelake2", "morrainelake3", "rocks", "waterfall"] 
-img.src = "img/" + imgName + ".jpg"
-var src = document.getElementById("images")
- 
 
-
-function Image(image, author, tags) {
+function Image(image, location, tags) {
 	this.image = image;
-	this.author = author;
+	this.location = location;
 	this.tags = tags;
 	this.display = function() {
 
@@ -17,24 +11,52 @@ function Image(image, author, tags) {
 		})
 
 		container.css("background", this.image)
+		container.css("background-size", "cover")
 
 		var imageString = "";
-		imageString += "<img src ='" + this.image + "'>";
-		imageString += "<cite>" + this.author + "</cite>";
+		imageString += "<div>" + this.image + "</div>";
+		imageString += "<cite>" + this.location + "</cite>";
 
 		container.html(imageString)
 		$(".images").prepend(container)
 	}
 }
 
-
+var imgName = ["lake", "lake2", "lakecloseup", "lakelouise", 
+				"lakelouise2","morrainelake", "morrainelake2",
+				"morrainelake3", "rocks", "waterfall"]
 
 var images = [
 
-	new Image("src.appendChild(img))", 
+
+	new Image( "url(img/" + imgName[0] + ".JPG)",
 	"Bailey Robertson", ["happy", "random"]),
 
-	new Image("'I am also happy'", 
+	new Image("url(img/" + imgName[1] + ".JPG)", 
+ 	"Bailey Robertson", ["emotions", "random"]),
+
+ 	new Image("url(img/" + imgName[2] + ".JPG)", 
+ 	"Bailey Robertson", ["emotions", "random"]),
+
+ 	new Image("url(img/" + imgName[3] + ".JPG)", 
+ 	"Bailey Robertson", ["emotions", "random"]),
+
+ 	new Image("url(img/" + imgName[4] + ".JPG)", 
+ 	"Bailey Robertson", ["emotions", "random"]),
+
+ 	new Image("url(img/" + imgName[5] + ".JPG)", 
+ 	"Bailey Robertson", ["emotions", "random"]),
+
+ 	new Image("url(img/" + imgName[6] + ".JPG)", 
+ 	"Bailey Robertson", ["emotions", "random"]),
+
+ 	new Image("url(img/" + imgName[7] + ".JPG)", 
+ 	"Bailey Robertson", ["emotions", "random"]),
+
+ 	new Image("url(img/" + imgName[8] + ".JPG)", 
+ 	"Bailey Robertson", ["emotions", "random"]),
+
+ 	new Image("url(img/" + imgName[9] + ".JPG)", 
  	"Bailey Robertson", ["emotions", "random"])
  ]
 
