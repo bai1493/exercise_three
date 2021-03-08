@@ -3,25 +3,32 @@
 }
 
 html,body{
+	max-width:1000px;
 	min-height: 100vh;
-	margin: 0;
-	max-width: 300px;
+	margin: 0 auto;
 }
+
 
 img{
 	max-width: 100%;
 }
 
 .images{
-	color: black;
-	display: flex;
+	display: block;
+	padding: 5px;
+	margin: 10px;
+
 }
 
+.images cite {
+	color: black;
+	background-color: white;
+}
 
 div > div {
-	width: 250px;
-	height: 250px;
-	padding: 20px;
+	width: 200px;
+	height: 200px;
+
 
 }
 

@@ -12,9 +12,11 @@ function Image(image, location, tags) {
 
 		container.css("background", this.image)
 		container.css("background-size", "cover")
+		container.css("display", "inline-block")
+		container.css("padding", "20px")
 
 		var imageString = "";
-		imageString += "<div>" + this.image + "</div>";
+		//imageString += "<div>" + this.image + "</div>";
 		imageString += "<cite>" + this.location + "</cite>";
 
 		container.html(imageString)
@@ -30,34 +32,34 @@ var images = [
 
 
 	new Image( "url(img/" + imgName[0] + ".JPG)",
-	"Bailey Robertson", ["happy", "random"]),
+	"Banff", ["lake", "mountain", "trees"]),
 
 	new Image("url(img/" + imgName[1] + ".JPG)", 
- 	"Bailey Robertson", ["emotions", "random"]),
+ 	"Jasper", ["lake", "mountain", "trees"]),
 
  	new Image("url(img/" + imgName[2] + ".JPG)", 
- 	"Bailey Robertson", ["emotions", "random"]),
+ 	"Banff", ["lake", "mountain"]),
 
  	new Image("url(img/" + imgName[3] + ".JPG)", 
- 	"Bailey Robertson", ["emotions", "random"]),
+ 	"Lake Louise", ["lake", "trees"]),
 
  	new Image("url(img/" + imgName[4] + ".JPG)", 
- 	"Bailey Robertson", ["emotions", "random"]),
+ 	"Lake Louise", ["trees", "mountain", "river"]),
 
  	new Image("url(img/" + imgName[5] + ".JPG)", 
- 	"Bailey Robertson", ["emotions", "random"]),
+ 	"Morraine Lake", ["mountain", "lake", "wood"]),
 
  	new Image("url(img/" + imgName[6] + ".JPG)", 
- 	"Bailey Robertson", ["emotions", "random"]),
+ 	"Morraine Lake", ["rocks", "lake", "trees"]),
 
  	new Image("url(img/" + imgName[7] + ".JPG)", 
- 	"Bailey Robertson", ["emotions", "random"]),
+ 	"Morraine Lake", ["rocks", "lake", "mountain"]),
 
  	new Image("url(img/" + imgName[8] + ".JPG)", 
- 	"Bailey Robertson", ["emotions", "random"]),
+ 	"Highway 93", ["rocks", "river", "trees"]),
 
  	new Image("url(img/" + imgName[9] + ".JPG)", 
- 	"Bailey Robertson", ["emotions", "random"])
+ 	"Highway 93", ["rocks", "river"])
  ]
 
 
